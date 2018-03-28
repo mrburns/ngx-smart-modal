@@ -11,29 +11,29 @@ http://biig-io.github.io/ngx-smart-modal/
 
 
 ## No external library, no jQuery! 🤘
-To avoid imposing you to download a CSS library by using this package, you simply have to use our built-in SCSS/CSS file with custom animations and overridable variables. So get rid off to be forced to use a CSS library you don't want to! In addition, it doesn't use jQuery!  
+To avoid to download a CSS library by using this package, you simply have to use our built-in SCSS/CSS file with custom animations and overridable variables. So get rid of an external CSS library you don't want need! In addition, it doesn't use jQuery!  
 
 ![NgxSmartModal is the CSS frameworks's friend!](src/assets/css_frameworks.png)
 > #### But... I'm using Bootstrap (or Materialize, Foundation or anything else)!
-> Don't panic! We already thought about that! And because we want to be the more neutral as we can, we made it very flexible for you to style it!
-> So if your app uses a CSS framework that has some modal styles, you simply have to pick up its class names and set the main class it in the `[customClass]="'modal'"` (e.g.: bootstrap). And the rest of the modal DOM elements have just to be set in the `ngx-smart-modal` component (e.g.: modal-dialog, modal-content, modal-header, etc.).
+> Don't panic! We already thought about that! And because we want to be as neutral as we can, we made it very flexible for you to style it!
+> So if your app uses a CSS framework that has some modal styles, you simply have to pick up its class names and set the main class in the `[customClass]="'modal'"` (e.g.: bootstrap). And the rest of the modal DOM elements have just to be set in the `ngx-smart-modal` component (e.g.: modal-dialog, modal-content, modal-header, etc.).
 
 Check out the [documentation](https://github.com/biig-io/ngx-smart-modal#parameters--options) & [demo](https://github.com/biig-io/ngx-smart-modal) for more information and examples!
 
 See the [changelog](https://github.com/biig-io/ngx-smart-modal/blob/master/CHANGELOG.md) for recent changes.
 
-You can take a look on [this diagram](https://github.com/biig-io/ngx-smart-modal#how-it-works) if you are curious about how this library works.
+You can take a look at [this diagram](https://github.com/biig-io/ngx-smart-modal#how-it-works) if you are curious about how this library works.
 
 
 ## Features
  - Handle large quantity of modals anywhere in your app
  - Customize the style of your modals through custom CSS classes and SCSS variables!
- - No external CSS library is used so you can easily override the modals default style
+ - No external CSS library is used so you can easily override the modals' default style
  - Pass data to any modal and retrieve it very simply in the modal view (or anywhere else)
  - Events on `open`, `close`, `dismiss`, `escape` and more for each modal
  - Manage all your modal stack and data with very fast methods
  - Very smart `z-index` computation (no ugly glitches or problems with a modal inside another)
- - A modal in a modal in a modal in a modal... I guess you got it!
+ - A modal in a modal in a modal in a modal... You got it!
  - AoT compilation support
 
 
@@ -108,7 +108,7 @@ Example with **styles.scss**:
 
 ## Style & customization
 ⚠️ **For `ngx-smart-modal` >= 6.0.0 only!**
-`ngx-smart-modal` provides built-in [SCSS variables](https://sass-lang.com/guide#topic-2) that you can override easily like it (assuming you imported `ngx-smart-modal.scss` as explained above):
+`ngx-smart-modal` provides built-in [SCSS variables](https://sass-lang.com/guide#topic-2) that you can override easily (assuming you imported `ngx-smart-modal.scss` as explained above):
 ```
 /* You can add global styles to this file, and also import other style files */
 /* NgxSmartModal variables override */
@@ -157,7 +157,7 @@ The below documentation will use the following pattern:
 
 - `dismissable` (boolean) | `true` ― _Enable / disable the modal backdrop for listening to the click event (if backdrop is clicked and this option is set to true, it will close the current opened modal or the latest opened if you have several modals opened at the same time)_
 
-- `identifier` (string) | `undefined` | **REQUIRED** ― _The identifiant of the modal instance. Retrieve a modal easily by its identifier_
+- `identifier` (string) | `undefined` | **REQUIRED** ― _The identifier of the modal instance. Retrieve a modal easily by its identifier_
 
 - `force` (boolean) | true ― _If true and if you declare another modal instance with the same identifier that another, the service will override it by the new you declare in the modal stack._
 
@@ -343,8 +343,8 @@ If you wish to submit an issue, please use the available template to facilitate 
 ## Contribute
 Firstly fork this repo, then clone your fork and go inside the root of the freshly forked project.
 Run `npm i` or `yarn` to install dependencies then `yarn start` to start the angular-cli demo.
-To modify the library, go into `src/ngx-smart-modal` and do some code (and some tests)! 🤓
-When you've finished, commit and push it to your forked repo, and make a PR to the official `ngx-smart-modal` repo!
+To modify the library, go into `src/ngx-smart-modal` and write some code (and some tests)! 🤓
+When you're finished, commit and push it to your forked repo, and make a PR to the official `ngx-smart-modal` repo!
 Thank you for your support, you rock! 🤘🎸
 
 
