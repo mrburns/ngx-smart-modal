@@ -11,7 +11,7 @@ http://biig-io.github.io/ngx-smart-modal/
 
 
 ## No external library, no jQuery! 🤘
-To avoid to download a CSS library by using this package, you simply have to use our built-in SCSS/CSS file with custom animations and overridable variables. So get rid of an external CSS library you don't want need! In addition, it doesn't use jQuery!  
+To avoid to download a CSS library by using this package, you simply have to use our built-in SCSS/CSS file with custom animations and overridable variables. So get rid of an external CSS library you don't need! In addition, it doesn't use jQuery!  
 
 ![NgxSmartModal is the CSS frameworks's friend!](src/assets/css_frameworks.png)
 > #### But... I'm using Bootstrap (or Materialize, Foundation or anything else)!
